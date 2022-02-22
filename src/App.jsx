@@ -8,7 +8,6 @@ function App() {
   const [focusedTask, setFocusedTask] = useState(null);
 
   const listenToKeypress = ({ key }) => {
-    console.log(key);
     if (!focusedTask) return;
     let direction = "";
     const action = ["[", "]", "Enter", "Backspace"].indexOf(key);
@@ -52,7 +51,6 @@ function App() {
 
   const saveTaskHandler = (e) => {
     e.preventDefault();
-    console.log("saveTaskHandler");
 
     if (!inputValue.trim()?.length) return;
     const newTask = {
