@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+* {
+  color: white;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+input[type="text"] {
+  font-size: 24px;
+}
